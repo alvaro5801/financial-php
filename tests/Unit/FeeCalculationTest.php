@@ -5,8 +5,6 @@ use App\Services\TransactionSyncService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-// AQUI ESTÁ A CORREÇÃO:
-// Adicionamos TestCase (para ligar o Laravel) e RefreshDatabase (para limpar o banco)
 uses(TestCase::class, RefreshDatabase::class);
 
 test('deve calcular 5% de comissão quando o valor for maior que 100 reais', function () {

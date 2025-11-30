@@ -5,8 +5,7 @@ use App\Services\TransactionSyncService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-// AQUI ESTÁ A CORREÇÃO:
-// Adicionamos TestCase para carregar a aplicação corretamente
+
 uses(TestCase::class, RefreshDatabase::class);
 
 test('o serviço deve salvar uma nova transação no banco de dados', function () {

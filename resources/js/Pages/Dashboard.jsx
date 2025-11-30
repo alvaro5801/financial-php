@@ -1,19 +1,19 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
-import { Head, useForm } from '@inertiajs/react'; // <--- Adicionado useForm
+import { Head, useForm } from '@inertiajs/react'; 
 
 export default function Dashboard({ auth, kpis, transactions }) {
     
-    // Hook do Inertia para formulários (gerencia o loading automaticamente)
+    
     const { post, processing } = useForm();
 
-    // Função para formatar dinheiro (R$)
+    
     const formatMoney = (value) => {
         return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
     };
 
-    // Função disparada ao clicar no botão
+    
     const handleSync = () => {
-        // Chama a rota que criamos no web.php
+        
         post(route('transactions.sync'));
     };
 
