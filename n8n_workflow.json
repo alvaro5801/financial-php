@@ -1,0 +1,31 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "http://laravel.test/api/transactions",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        0,
+        0
+      ],
+      "id": "880c58cc-4db5-42e7-8dbb-6b175d79cf14",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "connections": {},
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "2e206f60-5644-4130-9206-8738aa6c2f1d",
+  "meta": {
+    "instanceId": "df0f80968f0b21132995426bb08f1cb1505ed6459c03a3593493dec2ca8996a2"
+  },
+  "id": "zPCA46jfeUyXbWms",
+  "tags": []
+}
