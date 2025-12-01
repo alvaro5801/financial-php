@@ -21,7 +21,7 @@ class SyncStripeTransactionsJob implements ShouldQueue
     public function handle(TransactionSyncService $service): void
     {
         
-        $stripe = new StripeClient(config('services.stripe.secret', env('STRIPE_SECRET')));
+        $stripe = new StripeClient(config('services.stripe.secret'));
 
         
         $charges = $stripe->charges->all(['limit' => 10]);
